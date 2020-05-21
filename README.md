@@ -60,7 +60,7 @@ When you select Add Webhook on that page you'll be sown the following form.
 **Which events would you like to trigger this webhook?**
 For now, select "Send me everything". You can refine this later, if you'd like.
 
-Keep all other default values and select Add Webhook.
+Keep all other default values and select Add Webhook. Check out the reference for GitHub's [Issues](https://developer.github.com/webhooks/event-payloads/#issues) event payload to get an idea of how GitHub's webhooks are structured.
 
 # Event Transformer Code
 Now, the fun part! Let's edit the transformer code. For your Transformer to process GitHub webhooks copy the cody in [transformer.js](transformer.js) and hit the Save button on that page. This creates (or updates) an AWS Lambda that may need a minute to spin up. So, please give your Transformer a few minutes before firing test webhooks at it. 
