@@ -10,8 +10,8 @@ export function transform(PD) {
    
     // capture the GitHub event type
     for (var i = 0; i < headers.length; i++) {
-        if('X-GitHub-Event' in headers[i]) {
-            githubEventType = headers[i]['X-GitHub-Event'];
+        if('x-github-event' in headers[i]) {
+            githubEventType = headers[i]['x-github-event'];
         }
     }
     let githubLinkURL = '';
