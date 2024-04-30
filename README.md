@@ -23,15 +23,11 @@ The Event Integration page will have an option to Transform Event Data. Select "
 
 ![Transform Event Data](img/transformer-editor.png)
 
-We'll get to adding our own code in due time, but for now we need to progress down the page. We'll head passed the Debug Mode and Simple Install Flow sections and look at the Events Integration Test section. 
+We'll get to adding our own code in due time, but for now we need to progress down the page. We'll head passed th Simple Install Flow section and look at the Events Integration Test section. 
 
 In the Events Integration Test section we're given the option to Create a Test Service. Since your Event Transformer will not be connected to any one Service until it's in production we need to create a Test Service to receive and manage events while building the transformer.  
 
 ![Create Test Service](img/create-test-service.png)
-
-Once the Test Service is created head back up to the Debug Mode section. Here we're asked if we want runtime errors in our Transformer to be sent as incidents in our test service we just created. This is highly recommended to help you better debug your Transformer as you're building it.
-
-Debug mode will catch runtime errors, and syntax errors will be caught by Events Integration page. If you click the Save button any syntax errors will be announced at the top of the page, along with the line number of the problem.
 
 At this point, let's go ahead and hit the Save button at the bottom of the page. This will save our configuration and kick us back us out to the Configure App page. Before heading over to GitHub we need to grab one thing from the Events Integration, and that's the Events API Endpoint.
 
